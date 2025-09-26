@@ -85,3 +85,8 @@ pip install -r requirements.txt
 ```sh
 uvicorn src.main:app --reload
 ```
+
+### Access the API
+
+- Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to check if the API is running.
+- To test and explore the API, open the interactive Swagger documentation at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
