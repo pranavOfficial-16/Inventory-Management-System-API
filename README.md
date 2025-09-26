@@ -1,6 +1,5 @@
 # Inventory Management System API
 
-A robust FastAPI-based backend API for warehouse inventory management with real-time stock tracking and low-stock alerts.
 A FastAPI-based backend API to track products in a warehouse.
 
 ## Tech Stack & Libraries
@@ -11,15 +10,18 @@ A FastAPI-based backend API to track products in a warehouse.
 - **Uvicorn** - ASGI server for running FastAPI applications
 
 ### Database & ORM
+
 - **SQLite** - Lightweight disk-based database, perfect for development and small applications
 - **SQLAlchemy** - Python SQL toolkit and Object-Relational Mapping (ORM) library
 
 ### Data Validation
+
 - **Pydantic** - Data validation and settings management using Python type annotations
 
 ## Core Features
 
 ### Product Management
+
 - List all products
 - Create Products
 - Get specific product
@@ -32,11 +34,13 @@ A FastAPI-based backend API to track products in a warehouse.
 ## Design Choices & Architecture
 
 ### Database Design
+
 - **SQLite for Simplicity**: Chose SQLite for easy setup and development-friendly environment
 - **ORM over Raw SQL**: Used SQLAlchemy ORM for better maintainability and type safety
 - **Explicit Schema Definition**: Defined clear database models with proper constraints
 
 ### API Architecture
+
 - **Separation of Concerns**: Separate files for models, schemas, database config, and routes
 - **Dependency Injection**: Used FastAPI's dependency system for database sessions
 - **RESTful Conventions**: Followed standard HTTP methods and status codes
