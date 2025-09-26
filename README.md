@@ -6,17 +6,17 @@ A FastAPI-based backend API to track products in a warehouse.
 
 ### Backend Framework
 
-- **FastAPI** - Modern, fast web framework for building APIs with Python
+- **FastAPI** - Modern web framework for building high-performance APIs using Python
 - **Uvicorn** - ASGI server for running FastAPI applications
 
 ### Database & ORM
 
 - **SQLite** - Lightweight disk-based database, perfect for development and small applications
-- **SQLAlchemy** - Python SQL toolkit and Object-Relational Mapping (ORM) library
+- **SQLAlchemy** - ORM (Object-Relational Mapper) for database operations
 
 ### Data Validation
 
-- **Pydantic** - Data validation and settings management using Python type annotations
+- **Pydantic** - Data validation library for API inputs and outputs
 
 ## Core Features
 
