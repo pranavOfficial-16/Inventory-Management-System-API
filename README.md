@@ -20,8 +20,6 @@ A FastAPI-based backend API to track products in a warehouse.
 
 ## Core Features
 
-### Product Management
-
 - List all products
 - Create Products
 - Get specific product
@@ -67,7 +65,7 @@ cd inventory-management-system-api
 
 ### 2. Create and activate a virtual environment
 
-**On Windows (PowerShell):**
+**On Windows:**
 
 ```sh
 python -m venv venv
