@@ -1,6 +1,6 @@
 # Inventory Management System API
 
-A robust FastAPI-based backend API for warehouse inventory management with real-time stock tracking and low-stock alerts.
+A FastAPI-based backend API to track products in a warehouse.
 
 ## 1. Tech Stack & Libraries
 
