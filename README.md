@@ -2,7 +2,7 @@
 
 A robust FastAPI-based backend API for warehouse inventory management with real-time stock tracking and low-stock alerts.
 
-## 1. Tech Stack & Libraries
+## Tech Stack & Libraries
 
 ### Backend Framework
 - **FastAPI** - Modern, fast web framework for building APIs with Python
@@ -15,7 +15,7 @@ A robust FastAPI-based backend API for warehouse inventory management with real-
 ### Data Validation
 - **Pydantic** - Data validation and settings management using Python type annotations
 
-## 2. Core Features
+## Core Features
 
 ### Product Management
 - List all products
@@ -27,7 +27,7 @@ A robust FastAPI-based backend API for warehouse inventory management with real-
 - Decrease Stock (with validation)
 - Low stock threshold products
 
-## 3. Design Choices & Architecture
+## Design Choices & Architecture
 
 ### Database Design
 - **SQLite for Simplicity**: Chose SQLite for easy setup and development-friendly environment
@@ -48,15 +48,96 @@ A robust FastAPI-based backend API for warehouse inventory management with real-
 - **Database Constraints**: Used application-level validation alongside database constraints
 - **Atomic Operations**: Database commits happen after successful validation
 
-## 4. Setup & Installation
+## Setup & Installation
 
-### Clone the repository
+### 1. Clone the repository
 
-git clone https://github.com/your-username/inventory-management-system-api.git
+```sh
+git clone https://github.com/your-username/Inventory-Management-System-API.git
 cd inventory-management-system-api
+```
 
-### Create & activate a virtual environment
+### 2. Create and activate a virtual environment
 
-# On Windows (PowerShell)
+**On Windows (PowerShell):**
+```sh
 python -m venv venv
 .\venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```sh
+pip install -r requirements.txt
+```
+
+### 4. Run the server
+
+**From the project root directory:**
+```sh
+uvicorn src.main:app --reload
+```
+
+# Inventory Management System API
+
+A robust FastAPI-based backend API for warehouse inventory management with real-time stock tracking and low-stock alerts.
+
+## Features
+
+- List all products
+- Create, update, and delete products
+- Get specific product details
+- Increase or decrease stock (with validation)
+- View products below low stock threshold
+
+## Tech Stack
+
+- **FastAPI** - Modern Python web framework
+- **Uvicorn** - ASGI server for FastAPI
+- **SQLite** - Lightweight database
+- **SQLAlchemy** - ORM for database operations
+- **Pydantic** - Data validation
+
+## Setup & Installation
+
+### 1. Clone the repository
+
+```sh
+git clone https://github.com/your-username/inventory-management-system-api.git
+cd inventory-management-system-api
+```
+
+### 2. Create and activate a virtual environment
+
+**On Windows (PowerShell):**
+```sh
+python -m venv venv
+.\venv\Scripts\activate
+```
+
+**On macOS/Linux:**
+```sh
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```sh
+pip install -r requirements.txt
+```
+
+### 4. Run the server
+
+**From the project root directory:**
+```sh
+uvicorn src.main:app --reload
+```
+
+The API will be available at [http://localhost:8000](http://127.0.0.1:8000).
+
+## API Documentation
+
+- Interactive docs: [http://localhost:8000/docs](http://localhost:8000/docs)
+- Alternative docs: [http://localhost:8000/redoc](http://localhost:8000/redoc)
+
